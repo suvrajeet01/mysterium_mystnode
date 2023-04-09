@@ -1,0 +1,699 @@
+gitpod /workspace/mysterium_mystnode (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        terminal-commands
+
+nothing added to commit but untracked files present (use "git add" to track)
+gitpod /workspace/mysterium_mystnode (trunk) $ git add .
+gitpod /workspace/mysterium_mystnode (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   terminal-commands
+
+gitpod /workspace/mysterium_mystnode (trunk) $ git commit -m "musterium-mystnodes.terminal-commands"
+[trunk ff3402b] musterium-mystnodes.terminal-commands
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 terminal-commands
+gitpod /workspace/mysterium_mystnode (trunk) $ git status
+On branch trunk
+Your branch is ahead of 'origin/trunk' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+gitpod /workspace/mysterium_mystnode (trunk) $ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/suvrajeet01/mysterium_mystnode.git
+   d02f0d2..ff3402b  trunk -> trunk
+gitpod /workspace/mysterium_mystnode (trunk) $ git status
+On branch trunk
+Your branch is up to date with 'origin/trunk'.
+
+nothing to commit, working tree clean
+gitpod /workspace/mysterium_mystnode (trunk) $ clear
+gitpod /workspace/mysterium_mystnode (trunk) $ exit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod
+  mysterium_mystnode repository
+    terminal commands
+
+
+
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo add-apt-repository ppa:mysteriumnetwork/node
+ 
+ More info: https://launchpad.net/~mysteriumnetwork/+archive/ubuntu/node
+Press [ENTER] to continue or Ctrl-c to cancel adding it.
+
+Get:2 https://download.docker.com/linux/ubuntu focal InRelease [57.7 kB]                                          
+Get:3 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [29.7 kB]                              
+Hit:4 http://archive.ubuntu.com/ubuntu focal InRelease                                                            
+Get:5 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]                        
+Get:6 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]                                     
+Get:7 http://ppa.launchpad.net/git-core/ppa/ubuntu focal InRelease [23.8 kB]             
+Get:8 http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal InRelease [18.1 kB]                             
+Get:9 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1,027 kB] 
+Get:10 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]                 
+Get:11 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2,198 kB]                        
+Get:12 http://ppa.launchpad.net/ondrej/apache2/ubuntu focal InRelease [23.8 kB]            
+Get:13 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [2,060 kB]                      
+Get:14 http://ppa.launchpad.net/ondrej/nginx-mainline/ubuntu focal InRelease [23.8 kB]                       
+Get:15 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [28.5 kB]                     
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3,069 kB]                              
+Get:17 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2,590 kB]                            
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [31.2 kB]                         
+Get:19 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1,323 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [32.7 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [84.9 kB]
+Get:22 http://ppa.launchpad.net/ondrej/php/ubuntu focal InRelease [23.9 kB]       
+Get:23 http://ppa.launchpad.net/git-core/ppa/ubuntu focal/main amd64 Packages [3,160 B]
+Get:24 http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal/main amd64 Packages [487 B]
+Get:25 http://ppa.launchpad.net/ondrej/apache2/ubuntu focal/main amd64 Packages [4,907 B]
+Get:26 http://ppa.launchpad.net/ondrej/nginx-mainline/ubuntu focal/main amd64 Packages [6,422 B]
+Get:27 http://ppa.launchpad.net/ondrej/php/ubuntu focal/main amd64 Packages [194 kB]
+Get:1 https://apt.llvm.org/focal llvm-toolchain-focal-15 InRelease [6,833 B]
+Get:28 https://apt.llvm.org/focal llvm-toolchain-focal-15/main amd64 Packages [12.4 kB]
+Fetched 13.2 MB in 4s (3,188 kB/s)    
+Reading package lists... Done
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo apt-get update
+Hit:2 https://download.docker.com/linux/ubuntu focal InRelease                                                    
+Hit:3 http://security.ubuntu.com/ubuntu focal-security InRelease                                                  
+Hit:4 http://archive.ubuntu.com/ubuntu focal InRelease                                                            
+Hit:1 https://apt.llvm.org/focal llvm-toolchain-focal-15 InRelease                                                
+Hit:5 http://archive.ubuntu.com/ubuntu focal-updates InRelease                                    
+Hit:6 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:7 http://ppa.launchpad.net/git-core/ppa/ubuntu focal InRelease
+Hit:8 http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal InRelease
+Hit:9 http://ppa.launchpad.net/ondrej/apache2/ubuntu focal InRelease
+Hit:10 http://ppa.launchpad.net/ondrej/nginx-mainline/ubuntu focal InRelease
+Hit:11 http://ppa.launchpad.net/ondrej/php/ubuntu focal InRelease
+Reading package lists... Done                        
+gitpod /workspace/mysterium_mystnode (trunk) $ 
+gitpod /workspace/mysterium_mystnode (trunk) $ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo add-apt-repository ppa:mysteriumnetwork/node
+ 
+ More info: https://launchpad.net/~mysteriumnetwork/+archive/ubuntu/node
+Press [ENTER] to continue or Ctrl-c to cancel adding it.
+
+Get:2 https://download.docker.com/linux/ubuntu focal InRelease [57.7 kB]                                          
+Get:3 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [29.7 kB]                              
+Hit:4 http://archive.ubuntu.com/ubuntu focal InRelease                                                            
+Get:5 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]                        
+Get:6 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]                                     
+Get:7 http://ppa.launchpad.net/git-core/ppa/ubuntu focal InRelease [23.8 kB]             
+Get:8 http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal InRelease [18.1 kB]                             
+Get:9 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [1,027 kB] 
+Get:10 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]                 
+Get:11 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [2,198 kB]                        
+Get:12 http://ppa.launchpad.net/ondrej/apache2/ubuntu focal InRelease [23.8 kB]            
+Get:13 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [2,060 kB]                      
+Get:14 http://ppa.launchpad.net/ondrej/nginx-mainline/ubuntu focal InRelease [23.8 kB]                       
+Get:15 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [28.5 kB]                     
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [3,069 kB]                              
+Get:17 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [2,590 kB]                            
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [31.2 kB]                         
+Get:19 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1,323 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [32.7 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [84.9 kB]
+Get:22 http://ppa.launchpad.net/ondrej/php/ubuntu focal InRelease [23.9 kB]       
+Get:23 http://ppa.launchpad.net/git-core/ppa/ubuntu focal/main amd64 Packages [3,160 B]
+Get:24 http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal/main amd64 Packages [487 B]
+Get:25 http://ppa.launchpad.net/ondrej/apache2/ubuntu focal/main amd64 Packages [4,907 B]
+Get:26 http://ppa.launchpad.net/ondrej/nginx-mainline/ubuntu focal/main amd64 Packages [6,422 B]
+Get:27 http://ppa.launchpad.net/ondrej/php/ubuntu focal/main amd64 Packages [194 kB]
+Get:1 https://apt.llvm.org/focal llvm-toolchain-focal-15 InRelease [6,833 B]
+Get:28 https://apt.llvm.org/focal llvm-toolchain-focal-15/main amd64 Packages [12.4 kB]
+Fetched 13.2 MB in 4s (3,188 kB/s)    
+Reading package lists... Done
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo apt-get update
+Hit:2 https://download.docker.com/linux/ubuntu focal InRelease                                                    
+Hit:3 http://security.ubuntu.com/ubuntu focal-security InRelease                                                  
+Hit:4 http://archive.ubuntu.com/ubuntu focal InRelease                                                            
+Hit:1 https://apt.llvm.org/focal llvm-toolchain-focal-15 InRelease                                                
+Hit:5 http://archive.ubuntu.com/ubuntu focal-updates InRelease                                    
+Hit:6 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Hit:7 http://ppa.launchpad.net/git-core/ppa/ubuntu focal InRelease
+Hit:8 http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal InRelease
+Hit:9 http://ppa.launchpad.net/ondrej/apache2/ubuntu focal InRelease
+Hit:10 http://ppa.launchpad.net/ondrej/nginx-mainline/ubuntu focal InRelease
+Hit:11 http://ppa.launchpad.net/ondrej/php/ubuntu focal InRelease
+Reading package lists... Done                        
+gitpod /workspace/mysterium_mystnode (trunk) $ 
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo apt install myst
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  dctrl-tools dkms fakeroot kmod libfakeroot libpkcs11-helper1 linux-headers-5.4.0-146
+  linux-headers-5.4.0-146-generic linux-headers-generic openvpn resolvconf wireguard wireguard-dkms
+  wireguard-tools
+Suggested packages:
+  debtags menu openvpn-systemd-resolved easy-rsa
+The following NEW packages will be installed:
+  dctrl-tools dkms fakeroot kmod libfakeroot libpkcs11-helper1 linux-headers-5.4.0-146
+  linux-headers-5.4.0-146-generic linux-headers-generic myst openvpn resolvconf wireguard wireguard-dkms
+  wireguard-tools
+0 upgraded, 15 newly installed, 0 to remove and 139 not upgraded.
+Need to get 27.7 MB of archives.
+After this operation, 130 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Abort.
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo apt install myst
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  dctrl-tools dkms fakeroot kmod libfakeroot libpkcs11-helper1 linux-headers-5.4.0-146
+  linux-headers-5.4.0-146-generic linux-headers-generic openvpn resolvconf wireguard wireguard-dkms
+  wireguard-tools
+Suggested packages:
+  debtags menu openvpn-systemd-resolved easy-rsa
+The following NEW packages will be installed:
+  dctrl-tools dkms fakeroot kmod libfakeroot libpkcs11-helper1 linux-headers-5.4.0-146
+  linux-headers-5.4.0-146-generic linux-headers-generic myst openvpn resolvconf wireguard wireguard-dkms
+  wireguard-tools
+0 upgraded, 15 newly installed, 0 to remove and 139 not upgraded.
+Need to get 27.7 MB of archives.
+After this operation, 130 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 kmod amd64 27-1ubuntu2.1 [94.8 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 dctrl-tools amd64 2.24-3 [61.5 kB]
+Get:3 http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal/main amd64 myst amd64 1.19.21+build796851649+focal [14.1 MB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 dkms all 2.8.1-5ubuntu2 [66.8 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 libfakeroot amd64 1.24-1 [25.7 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 fakeroot amd64 1.24-1 [62.6 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 libpkcs11-helper1 amd64 1.26-1 [44.3 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-headers-5.4.0-146 all 5.4.0-146.163 [11.0 MB]
+Get:9 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-headers-5.4.0-146-generic amd64 5.4.0-146.163 [1,375 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 linux-headers-generic amd64 5.4.0.146.144 [2,364 B]
+Get:11 http://archive.ubuntu.com/ubuntu focal/universe amd64 resolvconf all 1.82 [54.7 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 openvpn amd64 2.4.7-1ubuntu2.20.04.4 [476 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 wireguard-dkms all 1.0.20201112-1~20.04.1 [254 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 wireguard-tools amd64 1.0.20200513-1~20.04.2 [83.3 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 wireguard all 1.0.20200513-1~20.04.2 [3,264 B]
+Fetched 27.7 MB in 2s (13.5 MB/s)                                 
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package kmod.
+(Reading database ... 36107 files and directories currently installed.)
+Preparing to unpack .../00-kmod_27-1ubuntu2.1_amd64.deb ...
+Unpacking kmod (27-1ubuntu2.1) ...
+Selecting previously unselected package dctrl-tools.
+Preparing to unpack .../01-dctrl-tools_2.24-3_amd64.deb ...
+Unpacking dctrl-tools (2.24-3) ...
+Selecting previously unselected package dkms.
+Preparing to unpack .../02-dkms_2.8.1-5ubuntu2_all.deb ...
+Unpacking dkms (2.8.1-5ubuntu2) ...
+Selecting previously unselected package libfakeroot:amd64.
+Preparing to unpack .../03-libfakeroot_1.24-1_amd64.deb ...
+Unpacking libfakeroot:amd64 (1.24-1) ...
+Selecting previously unselected package fakeroot.
+Preparing to unpack .../04-fakeroot_1.24-1_amd64.deb ...
+Unpacking fakeroot (1.24-1) ...
+Selecting previously unselected package libpkcs11-helper1:amd64.
+Preparing to unpack .../05-libpkcs11-helper1_1.26-1_amd64.deb ...
+Unpacking libpkcs11-helper1:amd64 (1.26-1) ...
+Selecting previously unselected package linux-headers-5.4.0-146.
+Preparing to unpack .../06-linux-headers-5.4.0-146_5.4.0-146.163_all.deb ...
+Unpacking linux-headers-5.4.0-146 (5.4.0-146.163) ...
+Selecting previously unselected package linux-headers-5.4.0-146-generic.
+Preparing to unpack .../07-linux-headers-5.4.0-146-generic_5.4.0-146.163_amd64.deb ...
+Unpacking linux-headers-5.4.0-146-generic (5.4.0-146.163) ...
+Selecting previously unselected package linux-headers-generic.
+Preparing to unpack .../08-linux-headers-generic_5.4.0.146.144_amd64.deb ...
+Unpacking linux-headers-generic (5.4.0.146.144) ...
+Selecting previously unselected package resolvconf.
+Preparing to unpack .../09-resolvconf_1.82_all.deb ...
+Unpacking resolvconf (1.82) ...
+Selecting previously unselected package openvpn.
+Preparing to unpack .../10-openvpn_2.4.7-1ubuntu2.20.04.4_amd64.deb ...
+Unpacking openvpn (2.4.7-1ubuntu2.20.04.4) ...
+Selecting previously unselected package wireguard-dkms.
+Preparing to unpack .../11-wireguard-dkms_1.0.20201112-1~20.04.1_all.deb ...
+Unpacking wireguard-dkms (1.0.20201112-1~20.04.1) ...
+Selecting previously unselected package wireguard-tools.
+Preparing to unpack .../12-wireguard-tools_1.0.20200513-1~20.04.2_amd64.deb ...
+Unpacking wireguard-tools (1.0.20200513-1~20.04.2) ...
+Selecting previously unselected package wireguard.
+Preparing to unpack .../13-wireguard_1.0.20200513-1~20.04.2_all.deb ...
+Unpacking wireguard (1.0.20200513-1~20.04.2) ...
+Selecting previously unselected package myst.
+Preparing to unpack .../14-myst_1.19.21+build796851649+focal_amd64.deb ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+Configuring myst
+----------------
+
+You have to accept terms and conditions to install this software
+
+                            MYSTERIUM NETWORK
+                               TERMS OF USE
+                           FOR MYSTERIUM NODES
+SHORT VERSION IN HUMAN LANGUAGE FOR EXIT NODE: . You will join our network and act as an exit node for others who
+will use your hardware and internet traffic to access internet resources. . We strive to protect you from any
+legal liability and believe that you should not be liable for running an exit node, but we cannot guarantee that
+you might not face it. . You cannot use or encourage or assist others to use the network in any way which violates
+any laws or rights of any party, including intellectual property rights. . You can monitor data which passes
+through your equipment only to whitelist the exit destinations for outgoing traffic. . You can use the network
+with our Mysterium software ([https://github.com/mysteriumnetwork](https://github.com/mysteriumnetwork)) or any
+other compatible software. . Your use of the network is at your own risk. We provide it to you “as is” without
+any warranties. . In no event will we be liable for any damages which you may incur. . We recommend that you read
+the full version below to get acquainted with all of the terms and conditions. SHORT VERSION IN HUMAN LANGUAGE FOR
+END USER: . You cannot use or encourage or assist others to use the network in any way which violates any laws or
+rights of any party, including intellectual property rights. . Your use of the network is at your own risk. We
+provide it to you “as is” without any warranties. . You are responsible for all the content that you receive,
+distribute or otherwise transmit through the network. . You can use the network with our Mysterium software
+([https://github.com/mysteriumnetwork](https://github.com/mysteriumnetwork)) or any other compatible software. .
+In no event will we be liable for any damages which you may incur. . We recommend you to read the full version
+bellow to get acquainted with all of the terms and conditions. We recommend that you read the full versions below
+to get acquainted with all of the terms and conditions available here:
+https://github.com/mysteriumnetwork/terms/blob/master/documents/TERMS_EXIT_NODE.md
+https://github.com/mysteriumnetwork/terms/blob/master/documents/TERMS_END_USER.md
+
+In order to install this package you have to accept its terms and conditions
+
+Do you accept Terms and Conditions? [yes/no] yes
+
+Unpacking myst (1.19.21+build796851649+focal) ...
+Setting up resolvconf (1.82) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+Created symlink /etc/systemd/system/sysinit.target.wants/resolvconf.service → /lib/systemd/system/resolvconf.service.
+Created symlink /etc/systemd/system/systemd-resolved.service.wants/resolvconf-pull-resolved.path → /lib/systemd/system/resolvconf-pull-resolved.path.
+Setting up kmod (27-1ubuntu2.1) ...
+Setting up libpkcs11-helper1:amd64 (1.26-1) ...
+Setting up libfakeroot:amd64 (1.24-1) ...
+Setting up fakeroot (1.24-1) ...
+update-alternatives: using /usr/bin/fakeroot-sysv to provide /usr/bin/fakeroot (fakeroot) in auto mode
+Setting up wireguard-tools (1.0.20200513-1~20.04.2) ...
+Setting up linux-headers-5.4.0-146 (5.4.0-146.163) ...
+Setting up dctrl-tools (2.24-3) ...
+Setting up openvpn (2.4.7-1ubuntu2.20.04.4) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of cond-restart.
+Created symlink /etc/systemd/system/multi-user.target.wants/openvpn.service → /lib/systemd/system/openvpn.service.
+Setting up linux-headers-5.4.0-146-generic (5.4.0-146.163) ...
+Setting up linux-headers-generic (5.4.0.146.144) ...
+Setting up dkms (2.8.1-5ubuntu2) ...
+Setting up wireguard-dkms (1.0.20201112-1~20.04.1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+Loading new wireguard-1.0.20201112 DKMS files...
+It is likely that 5.15.0-47-generic belongs to a chroot's host
+Building for 5.4.0-146-generic
+Building initial module for 5.4.0-146-generic
+Done.
+
+wireguard.ko:
+Running module version sanity check.
+ - Original module
+   - No original module exists within this kernel
+ - Installation
+   - Installing to /lib/modules/5.4.0-146-generic/updates/dkms/
+
+depmod...
+
+DKMS: install completed.
+Setting up wireguard (1.0.20200513-1~20.04.2) ...
+Setting up myst (1.19.21+build796851649+focal) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+Creating user 'mysterium-node:mysterium-node'...
+Creating directories...
+Setting required capabilities...
+iptables basepath detected: /usr/sbin
+
+Installation successfully finished.
+Usage: service mysterium-node restart
+Installing systemd script '/lib/systemd/system/mysterium-node.service'..
+Created symlink /etc/systemd/system/dbus-org.freedesktop.network1.service → /lib/systemd/system/systemd-networkd.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/systemd-networkd.service → /lib/systemd/system/systemd-networkd.service.
+Created symlink /etc/systemd/system/sockets.target.wants/systemd-networkd.socket → /lib/systemd/system/systemd-networkd.socket.
+Created symlink /etc/systemd/system/network-online.target.wants/systemd-networkd-wait-online.service → /lib/systemd/system/systemd-networkd-wait-online.service.
+Created symlink /etc/systemd/system/multi-user.target.wants/mysterium-node.service → /lib/systemd/system/mysterium-node.service.
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+got an error, ignoring - probably systemd-spawn issue
+Processing triggers for systemd (245.4-4ubuntu3.17) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.9) ...
+Processing triggers for resolvconf (1.82) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+gitpod /workspace/mysterium_mystnode (trunk) $ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo systemctl status mysterium-node.service
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+gitpod /workspace/mysterium_mystnode (trunk) $ 
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo systemctl status mysterium-node.service
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+gitpod /workspace/mysterium_mystnode (trunk) $ 
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo su
+root@suvrajeet01-mysteriummy-c2r46w86egw:/workspace/mysterium_mystnode# sudo systemctl status mysterium-node.service
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+root@suvrajeet01-mysteriummy-c2r46w86egw:/workspace/mysterium_mystnode# 
+root@suvrajeet01-mysteriummy-c2r46w86egw:/workspace/mysterium_mystnode# exit
+exit
+gitpod /workspace/mysterium_mystnode (trunk) $ ps -p 1 -o comm=
+supervisor
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo systemctl start mysterium-node.service
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo sysvinit start mysterium-node.service
+sudo: sysvinit: command not found
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo apt-get install systemd
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libpam-systemd libsystemd0 systemd-sysv systemd-timesyncd
+Suggested packages:
+  systemd-container
+Recommended packages:
+  networkd-dispatcher libnss-systemd
+The following packages will be upgraded:
+  libpam-systemd libsystemd0 systemd systemd-sysv systemd-timesyncd
+5 upgraded, 0 newly installed, 0 to remove and 134 not upgraded.
+Need to get 4,301 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Do you want to continue? [Y/n] T
+Abort.
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo apt-get install systemd
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libpam-systemd libsystemd0 systemd-sysv systemd-timesyncd
+Suggested packages:
+  systemd-container
+Recommended packages:
+  networkd-dispatcher libnss-systemd
+The following packages will be upgraded:
+  libpam-systemd libsystemd0 systemd systemd-sysv systemd-timesyncd
+5 upgraded, 0 newly installed, 0 to remove and 134 not upgraded.
+Need to get 4,301 kB of archives.
+After this operation, 0 B of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd-sysv amd64 245.4-4ubuntu3.20 [10.3 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libpam-systemd amd64 245.4-4ubuntu3.20 [186 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd-timesyncd amd64 245.4-4ubuntu3.20 [28.1 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 systemd amd64 245.4-4ubuntu3.20 [3,809 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libsystemd0 amd64 245.4-4ubuntu3.20 [268 kB]
+Fetched 4,301 kB in 1s (5,802 kB/s)  
+debconf: delaying package configuration, since apt-utils is not installed
+(Reading database ... 66470 files and directories currently installed.)
+Preparing to unpack .../systemd-sysv_245.4-4ubuntu3.20_amd64.deb ...
+Unpacking systemd-sysv (245.4-4ubuntu3.20) over (245.4-4ubuntu3.17) ...
+Preparing to unpack .../libpam-systemd_245.4-4ubuntu3.20_amd64.deb ...
+Unpacking libpam-systemd:amd64 (245.4-4ubuntu3.20) over (245.4-4ubuntu3.17) ...
+Preparing to unpack .../systemd-timesyncd_245.4-4ubuntu3.20_amd64.deb ...
+Unpacking systemd-timesyncd (245.4-4ubuntu3.20) over (245.4-4ubuntu3.17) ...
+Preparing to unpack .../systemd_245.4-4ubuntu3.20_amd64.deb ...
+Unpacking systemd (245.4-4ubuntu3.20) over (245.4-4ubuntu3.17) ...
+Preparing to unpack .../libsystemd0_245.4-4ubuntu3.20_amd64.deb ...
+Unpacking libsystemd0:amd64 (245.4-4ubuntu3.20) over (245.4-4ubuntu3.17) ...
+Setting up libsystemd0:amd64 (245.4-4ubuntu3.20) ...
+Setting up systemd-timesyncd (245.4-4ubuntu3.20) ...
+Setting up systemd (245.4-4ubuntu3.20) ...
+Setting access ACL "u::rwx,g::r-x,g:adm:r-x,m::r-x,o::r-x" on /var/log/journal failed: Operation not supported
+Setting up systemd-sysv (245.4-4ubuntu3.20) ...
+Setting up libpam-systemd:amd64 (245.4-4ubuntu3.20) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+Processing triggers for libc-bin (2.31-0ubuntu9.9) ...
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for dbus (1.12.16-2ubuntu2.2) ...
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo systemctl status mysterium-node.service
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+gitpod /workspace/mysterium_mystnode (trunk) $ 
+gitpod /workspace/mysterium_mystnode (trunk) $ init=/sbin/bash
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo systemctl status mysterium-node.service
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+gitpod /workspace/mysterium_mystnode (trunk) $ systemctl
+System has not been booted with systemd as init system (PID 1). Can't operate.
+Failed to connect to bus: Host is down
+gitpod /workspace/mysterium_mystnode (trunk) $ ps -p 1 -o comm=
+supervisor
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo supervisor status mysterium-node.service
+sudo: supervisor: command not found
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo supervisord status mysterium-node.service
+sudo: supervisord: command not found
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo service supervisor start
+supervisor: unrecognized service
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo apt-get install -y supervisor
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+Suggested packages:
+  supervisor-doc
+The following NEW packages will be installed:
+  supervisor
+0 upgraded, 1 newly installed, 0 to remove and 134 not upgraded.
+Need to get 281 kB of archives.
+After this operation, 1,682 kB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/universe amd64 supervisor all 4.1.0-1ubuntu1 [281 kB]
+Fetched 281 kB in 0s (594 kB/s)    
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package supervisor.
+(Reading database ... 66470 files and directories currently installed.)
+Preparing to unpack .../supervisor_4.1.0-1ubuntu1_all.deb ...
+Unpacking supervisor (4.1.0-1ubuntu1) ...
+Setting up supervisor (4.1.0-1ubuntu1) ...
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Created symlink /etc/systemd/system/multi-user.target.wants/supervisor.service → /lib/systemd/system/supervisor.service.
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for systemd (245.4-4ubuntu3.20) ...
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo service systemctl start
+systemctl: unrecognized service
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo service systemd start
+systemd: unrecognized service
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo service supervisor start
+Starting supervisor: supervisord.
+gitpod /workspace/mysterium_mystnode (trunk) $ sudo supervisord status mysterium-node.service
+Error: positional arguments are not supported: ['status', 'mysterium-node.service']
+For help, use /usr/bin/supervisord -h
+gitpod /workspace/mysterium_mystnode (trunk) $ ps
+    PID TTY          TIME CMD
+     89 pts/0    00:00:00 bash
+   8858 pts/0    00:00:00 ps
+gitpod /workspace/mysterium_mystnode (trunk) $ ps -aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0 735292 21724 ?        S<l  09:05   0:00 supervisor init
+root          33  0.9  0.0 738620 37644 ?        S<l  09:05   0:12 supervisor run
+gitpod        60  0.0  0.0   2616   532 ?        S<   09:05   0:00 sh /ide/bin/gitpod-code --log=info --install-builtin-exte
+gitpod        69  1.4  0.1 951392 102912 ?       S<l  09:05   0:18 /ide/node /ide/out/server-main.js --log=info --install-bu
+gitpod        80  0.0  0.0 635944 47932 ?        S<l  09:05   0:01 /ide/node /ide/out/bootstrap-fork --type=ptyHost --logsPa
+gitpod        89  0.0  0.0  12372  9368 pts/0    Ss   09:05   0:00 /bin/bash
+gitpod       575  0.0  0.0 835604 41968 ?        S<l  09:05   0:00 /ide/node /ide/out/bootstrap-fork --type=fileWatcher
+gitpod       588  0.6  0.2 995684 134476 ?       R<l  09:05   0:07 /ide/node /ide/out/bootstrap-fork --type=extensionHost --
+gitpod       610  0.0  0.0  12408  9304 pts/1    S<s+ 09:05   0:00 /bin/bash --init-file /ide/out/vs/workbench/contrib/termi
+gitpod       842  0.0  0.0 589876 44208 ?        S<l  09:06   0:00 /ide/node /ide/extensions/json-language-features/server/d
+root        8827  0.0  0.0  31212 19172 ?        Ss   09:26   0:00 /usr/bin/python3 /usr/bin/supervisord -c /etc/supervisor/
+gitpod      8870  0.0  0.0   8900  3228 pts/0    R+   09:27   0:00 ps -aux
+gitpod /workspace/mysterium_mystnode (trunk) $ clear
